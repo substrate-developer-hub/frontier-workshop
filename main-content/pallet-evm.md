@@ -2,6 +2,8 @@
 
 Here we add the EVM pallet to the runtime. For reference, you can see this work in commit [0e6238b](https://github.com/JoshOrndorff/substrate-node-template/commit/0e6238bee8b61c7d87cbc5ecbde7ed93f80b60a4).
 
+![architecture diagram](../images/pallet-evm.png)
+
 ## Snippets
 
 `runtime/Cargo.toml`

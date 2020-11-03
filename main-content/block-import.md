@@ -7,6 +7,8 @@ it in that way, and so I'll avoid the term consensus in this writeup.
 
 For reference, you can see this work in commit [1c0931c](https://github.com/JoshOrndorff/substrate-node-template/commit/1c0931c59122d02b6ee8b3c55d35532f2c2174ce).
 
+![architecture diagram](../images/block-import.png)
+
 ## Using the Aux Store
 
 Substrate's [auxiliary storage](https://substrate.dev/rustdocs/v2.0.0/sc_client_api/backend/trait.AuxStore.html) provides an off-chain scratchpad for the node to record any data it likes. We'll use to store some mappings from Ethereum-style data to Substrate-style data.

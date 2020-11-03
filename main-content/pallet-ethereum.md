@@ -6,6 +6,8 @@ The biggest challenge here is that the Frontier project does not use the same, p
 
 For reference, you can see this work in commit [bbaa3f9](https://github.com/JoshOrndorff/substrate-node-template/commit/bbaa3f90080257451504aed1fed66ea3d446e3d1).
 
+![architecture diagram](../images/pallet-ethereum.png)
+
 ## Snippets
 
 `runtime/Cargo.toml`

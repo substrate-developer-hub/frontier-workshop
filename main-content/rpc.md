@@ -4,6 +4,8 @@ Now that we are able to query the runtime for ethereum-style data, and we have a
 
 For reference, you can see this work in commit [72ff2ec](https://github.com/JoshOrndorff/substrate-node-template/commit/72ff2ecfabe5945c520001423bcd5395fd0b9b24).
 
+![architecture diagram](../images/rpc.png)
+
 ## Snippets
 `node/Cargo.toml`
 ```toml
