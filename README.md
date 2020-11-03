@@ -2,7 +2,7 @@
 
 [Substrate](https://substrate.dev) is an extensible blockchain development framework. [Frontier](https://github.com/paritytech/frontier) is a set of modules to build an Ethereum-compatible blockchain with Substrate. [Moonbeam](https://moonbeam.network) is a Polkadot parachain built with Substrate and Frontier.
 
-This tutorial explains the concepts and demonstrates the steps necessary to build an Ethereum-compatible chain using Frontier. We make this tutorial public in the hopes that it will be useful, but the software in question is cutting edge and actively being developed. Expect things to break sometimes.
+This tutorial explains the concepts and demonstrates the steps necessary to build an Ethereum-compatible chain using Frontier.
 
 ## Maintenance and Development
 
