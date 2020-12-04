@@ -11,16 +11,19 @@ For reference, you can see this work in commit [bbaa3f9](https://github.com/Josh
 ## Snippets
 
 `runtime/Cargo.toml`
+
 ```toml
 pallet-ethereum = { default-features = false, git = 'https://github.com/PureStake/frontier.git', branch = 'substrate-v2' }
 ```
 
 `runtime/Cargo.toml`
+
 ```toml
 'pallet-evm/std',
 ```
 
 `runtime/src/lib.rs`
+
 ```rust
 impl pallet_ethereum::Trait for Runtime {
 	type Event = Event;
@@ -30,6 +33,7 @@ impl pallet_ethereum::Trait for Runtime {
 ```
 
 `runtime/src/lib.rs`
+
 ```rust
 Ethereum: pallet_ethereum::{Module, Call, Storage, Event, Config, ValidateUnsigned},
 ```

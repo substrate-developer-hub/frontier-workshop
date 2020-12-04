@@ -7,16 +7,19 @@ Here we add the EVM pallet to the runtime. For reference, you can see this work 
 ## Snippets
 
 `runtime/Cargo.toml`
+
 ```toml
 pallet-evm = { default-features = false, version = '2.0.0' }
 ```
 
 `runtime/Cargo.toml`
+
 ```toml
 'pallet-evm/std',
 ```
 
 `runtime/src/lib.rs`
+
 ```rust
 use pallet_evm::{
 	EnsureAddressTruncated, HashedAddressMapping,
@@ -24,6 +27,7 @@ use pallet_evm::{
 ```
 
 `runtime/src/lib.rs`
+
 ```rust
 parameter_types! {
 	pub const LeetChainId: u64 = 1337;
@@ -42,6 +46,7 @@ impl pallet_evm::Trait for Runtime {
 ```
 
 `runtime/src/lib.rs`
+
 ```rust
 EVM: pallet_evm::{Module, Call, Storage, Config, Event<T>}
 ```

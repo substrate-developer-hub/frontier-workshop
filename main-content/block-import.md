@@ -30,32 +30,37 @@ decl_storage! {
 ## Snippets
 
 `node/Cargo.toml`
+
 ```toml
 frontier-consensus = { git = 'https://github.com/PureStake/frontier.git', branch = 'substrate-v2' }
 ```
 
 `node/src/service.rs`
+
 ```rust
 use frontier_consensus::FrontierBlockImport;
 ```
 
 Update the type of our block import pipeline in the return type of the `new_partial` function.
 `node/src/service.rs`
+
 ```rust
 sc_consensus_aura::AuraBlockImport<
-			Block,
-			FullClient,
-			FrontierBlockImport<
-				Block,
-				sc_finality_grandpa::GrandpaBlockImport<FullBackend, Block, FullClient, FullSelectChain>,
-				FullClient
-			>,
-			AuraPair
-		>
+	Block,
+	FullClient,
+	FrontierBlockImport<
+		Block,
+		sc_finality_grandpa::GrandpaBlockImport<FullBackend, Block, FullClient, FullSelectChain>,
+		FullClient
+	>,
+	AuraPair
+>
 ```
 
 Install the block import pipeline.
+
 `node/src/service.rs`
+
 ```rust
 // Here we inert a piece in the block import pipeline
 // The old pipeline was Aura -> Grandpa -> Client

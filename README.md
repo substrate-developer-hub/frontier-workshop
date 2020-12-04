@@ -23,3 +23,11 @@ Additional supplemental learning resources are recommended throughout the worksh
 This tutorial is donated to Substrate Developer Hub by the [Moonbeam](https://moonbeam.network/) team, and made public in hopes that it will be useful.
 
 If you do encounter issues when following this tutorial, please [file a bug](https://github.com/substrate-developer-hub/frontier-workshop/issues/new) on github.
+
+## Contact
+
+Reach out to Substrate Developer Hub team at:
+
+* [Substrate Developer Hub](https://substrate.dev/)
+* [Subport - Substrate Support](https://github.com/paritytech/subport)
+* [Element - Substrate Technical](https://app.element.io/#/room/#substrate-technical:matrix.org)
