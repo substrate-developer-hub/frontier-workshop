@@ -8,12 +8,14 @@ For reference, you can see this work in commit [72ff2ec](https://github.com/Josh
 
 ## Snippets
 `node/Cargo.toml`
+
 ```toml
 frontier-rpc = { git = 'https://github.com/PureStake/frontier.git', branch = 'substrate-v2' }
 frontier-rpc-primitives = { git = 'https://github.com/PureStake/frontier.git', branch = 'substrate-v2' }
 ```
 
 `node/src/rpc.rs`
+
 ```rust
 use node_template_runtime::{opaque::Block, AccountId, Balance, Index, TransactionConverter};
 use sc_client_api::{
@@ -24,6 +26,7 @@ use sp_runtime::traits::BlakeTwo256;
 
 Here we add a field to the `FullDeps` struct. The ethereum RPC needs to know whether the node is a "miner", so we need this additional information. We will have to plumb this change through the `service.rs` file as well.
 `node/src/rpc.rs`
+
 ```rust
 /// Full client dependencies.
 pub struct FullDeps<C, P> {
@@ -52,6 +55,7 @@ EthereumRuntimeRPCApi (not part of substrate, so no hosted rustdocs)
 https://substrate.dev/rustdocs/v2.0.0/sp_transaction_pool/trait.TransactionPool.html
 
 `node/src/rpc.rs`
+
 ```rust
 /// Instantiate all full RPC extensions.
 pub fn create_full<C, P, BE>(
@@ -68,16 +72,22 @@ pub fn create_full<C, P, BE>(
 	C::Api: pallet_transaction_payment_rpc::TransactionPaymentRuntimeApi<Block, Balance>,
 	C::Api: BlockBuilder<Block>,
 	C::Api: frontier_rpc_primitives::EthereumRuntimeRPCApi<Block>,
-	P: TransactionPool<Block=Block> + 'static,
+	P: TransactionPool<Block=Block> + 'static
+{
+  // -- snip --
+}
 ```
 
-Here we have another import, but the precedent is to include it inside the `create_full` function instead of at the top. I don't know why this is, and it still compiles if you bring in the dependencies the normal way. Nonetheless, we'll follow suit.
+Here we have another import, but the precedent is to include it inside the `create_full` function instead of at the top.
+
 `node/src/rpc.rs`
+
 ```rust
 use frontier_rpc::{EthApi, EthApiServer};
 ```
 
 More plumbing of `is_authority`
+
 ```rust
 let FullDeps {
   client,
@@ -88,6 +98,7 @@ let FullDeps {
 ```
 
 Finally install the actual RPC extension. Depending on what order you place this code, you may need to modify some of the clones.
+
 ```rust
 io.extend_with(
   EthApiServer::to_delegate(EthApi::new(
@@ -102,11 +113,13 @@ io.extend_with(
 And with the `rpc.rs` file complete, we now plumb the `is_authority` change through the service.
 
 `node/src/service.rs`
+
 ```rust
 let is_authority = role.is_authority();
 ```
 
 `node/src/service.rs`
+
 ```rust
 let deps = crate::rpc::FullDeps {
 	client: client.clone(),

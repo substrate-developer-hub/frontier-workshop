@@ -1,20 +1,18 @@
 # Frontier Workshop
 
-[Substrate](https://substrate.dev) is an extensible blockchain development framework. [Frontier](https://github.com/paritytech/frontier) is a set of modules to build an Ethereum-compatible blockchain with Substrate. [Moonbeam](https://moonbeam.network) is a Polkadot parachain built with Substrate and Frontier.
+[Substrate](https://substrate.dev) is an extensible blockchain development framework. [Frontier](https://github.com/paritytech/frontier) is a set of modules to build an Ethereum-compatible blockchain with Substrate. 
 
 This tutorial explains the concepts and demonstrates the steps necessary to build an Ethereum-compatible chain using Frontier.
 
-## Maintenance and Development
-
-This tutorial is written with ❤ by the Moonbeam team, and made public in hopes that it will be useful.
-
-The software being described here changes quickly and it is likely that the tutorial will go stale and need routine maintenance from time to time. The Moonbeam team makes no commitment to do that maintenance, but welcomes external contributions.
-
-If you do encounter issues when following this tutorial, please [file a bug](https://github.com/JoshOrndorff/frontier-workshop/issues/new) on github.
-
 ## Prerequisites
 
-The Substrate team offers many excellent learning resources at https://substrate.dev . Before attempting this workshop, you should be familiar with most of the concepts listed below. You should complete _at least_ three Substrate tutorials before attempting this workshop.
+We offer many excellent learning resources at https://substrate.dev. You should have completed _at least_ the following three Substrate tutorials before attempting this workshop:
+
+* [Create Your First Substrate Chain](https://substrate.dev/docs/en/tutorials/create-your-first-substrate-chain/)
+* [Add a Pallet to Your Runtime](https://substrate.dev/docs/en/tutorials/add-a-pallet/)
+* [Build a PoE Decentralized Application](https://substrate.dev/docs/en/tutorials/build-a-dapp/)
+
+Before attempting this workshop, you should be familiar with most of the concepts listed below:
 
 * Launching a Substrate chain
 * Submitting transactions
@@ -24,11 +22,17 @@ The Substrate team offers many excellent learning resources at https://substrate
 
 Additional supplemental learning resources are recommended throughout the workshop.
 
-## Contact the Moonbeam Team
+## Maintenance
 
-Reach out for any questions regarding Moonbeam or our other projects:
+This tutorial is donated to Substrate Developer Hub by the [Moonbeam](https://moonbeam.network/) team, and made public in hopes that it will be useful.
 
-- [Moonbeam Website](https://moonbeam.network/)
-- [Discord Channel](https://discord.gg/nWbtA9x)
-- [Telegram](https://t.me/Moonbeam_Official)
-- [Element](https://app.element.io/#/room/#moonbeam:matrix.org)
+If you do encounter issues when following this tutorial, please [file a bug](https://github.com/substrate-developer-hub/frontier-workshop/issues/new) on github.
+
+## Contact
+
+Reach out to Substrate Developer Hub team at:
+
+* [Substrate Developer Hub](https://substrate.dev/)
+* [Subport - Substrate Support](https://github.com/paritytech/subport)
+* [Element (Substrate Technical channel)](https://app.element.io/#/room/#substrate-technical:matrix.org)
+* [Element (Moonbeam channel)](https://app.element.io/#/room/#moonbeam:matrix.org) - channel to contact the original author of this repository

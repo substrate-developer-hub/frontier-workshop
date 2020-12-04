@@ -7,22 +7,26 @@ For reference, you can see this work in commit [b2e9b2c](https://github.com/Josh
 ## Snippets
 
 `runtime/Cargo.toml`
+
 ```toml
 frontier-rpc-primitives = { default-features = false, git = 'https://github.com/PureStake/frontier.git', branch = 'substrate-v2' }
 ```
 
 `runtime/Cargo.toml`
+
 ```toml
 'frontier-rpc-primitives/std',
 ```
 
 `runtime/src/lib.rs`
+
 ```rust
 use codec::{Encode, Decode};
 ```
 
 
 `runtime/src/lib.rs`
+
 ```rust
 /// A unit struct that can can convert ethereum-formatted transactions into Substrate-formatted transactions
 /// The ConvertTransaction trait is implemented twice. Once for Uncheckd Extrinsic and once for Opaque Unchecked Extrinsic
