@@ -74,7 +74,7 @@ pub fn create_full<C, P, BE>(
 	C::Api: frontier_rpc_primitives::EthereumRuntimeRPCApi<Block>,
 	P: TransactionPool<Block=Block> + 'static
 {
-  // -- snap --
+  // -- snip --
 }
 ```
 
