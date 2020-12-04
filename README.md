@@ -6,7 +6,11 @@ This tutorial explains the concepts and demonstrates the steps necessary to buil
 
 ## Prerequisites
 
-We offer many excellent learning resources at https://substrate.dev. You should complete _at least_ three [Substrate tutorials](https://substrate.dev/tutorials) before attempting this workshop.
+We offer many excellent learning resources at https://substrate.dev. You should have completed _at least_ the following three Substrate tutorials before attempting this workshop:
+
+* [Create Your First Substrate Chain](https://substrate.dev/docs/en/tutorials/create-your-first-substrate-chain/)
+* [Add a Pallet to Your Runtime](https://substrate.dev/docs/en/tutorials/add-a-pallet/)
+* [Build a PoE Decentralized Application](https://substrate.dev/docs/en/tutorials/build-a-dapp/)
 
 Before attempting this workshop, you should be familiar with most of the concepts listed below:
 
@@ -30,4 +34,5 @@ Reach out to Substrate Developer Hub team at:
 
 * [Substrate Developer Hub](https://substrate.dev/)
 * [Subport - Substrate Support](https://github.com/paritytech/subport)
-* [Element - Substrate Technical](https://app.element.io/#/room/#substrate-technical:matrix.org)
+* [Element (Substrate Technical channel)](https://app.element.io/#/room/#substrate-technical:matrix.org)
+* [Element (Moonbeam channel)](https://app.element.io/#/room/#moonbeam:matrix.org) - channel to contact the original author of this repository
