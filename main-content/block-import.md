@@ -62,7 +62,7 @@ Install the block import pipeline.
 `node/src/service.rs`
 
 ```rust
-// Here we inert a piece in the block import pipeline
+// Here we insert a piece in the block import pipeline
 // The old pipeline was Aura -> Grandpa -> Client
 // The new pipeline is Aura -> Frontier -> Grandpa -> Client
 let frontier_block_import = FrontierBlockImport::new(

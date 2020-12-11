@@ -19,7 +19,7 @@ pallet-ethereum = { default-features = false, git = 'https://github.com/PureStak
 `runtime/Cargo.toml`
 
 ```toml
-'pallet-evm/std',
+'pallet-ethereum/std',
 ```
 
 `runtime/src/lib.rs`
